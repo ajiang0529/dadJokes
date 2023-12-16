@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Get Joke</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Dad Joke</h1>
+    <strong>Here is your <%- jokeType %> joke: </strong>
+    <br>
+    <%- dadJoke %>
+    <br>
+    <form action="http://localhost:<%- portEJS %>/saveJoke" method="post">
+        <input class="butt" type="submit" value="Save Joke">
+    </form>
+    <a href="http://localhost:<%- portEJS %>">
+        <input class="butt" type="button" value="Dislike Joke" onclick="message()">
+    </a>
+
+    </a>
+</body>
+
+<script>
+    function message() {
+        window.alert("Joke was not saved. Sending you back to the home page.");
+    }
+</script>
+</html>

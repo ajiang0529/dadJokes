@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(47,79,79); 
+    color:blanchedalmond; 
+    font-family: Arial;
+}
+
+.butt{
+        border-style: double;
+        outline-color: blanchedalmond;
+        outline-width: 1px;
+        outline-offset:-1px;
+        outline-style:solid;
+        border-radius: 7px;
+        border-width: 4px;
+        border-color: blanchedalmond;
+        width: 10rem;
+        height: 2rem;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        color: rgb(47,79,79);
+}

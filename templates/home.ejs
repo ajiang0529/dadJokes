@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+	<title>Dad Jokes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Dad Jokes</h1>
+    <form action="http://localhost:<%- portEJS %>/getJoke" method="post">
+        <fieldset>
+            <strong>What type of joke would you like? </strong>
+            <br>
+            <br>
+            <input type="text" name="type">
+            <br>
+            <br>
+            <input class="butt" type="submit" value="Get Joke">
+            <br>
+        </fieldset>
+    </form>
+    <strong>To remove all jokes select <a href="http://localhost:<%- portEJS %>/removedJokes"><input class="butt" type="button" value="Remove All Jokes"></a></strong>
+    <br>
+    <strong>To get all saved jokes select <a href="http://localhost:<%- portEJS %>/savedJokes"><input class="butt" type="button" value="See Saved Jokes"></a></strong>
+</body>
+
+</html>
